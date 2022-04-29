@@ -1,0 +1,461 @@
+-------------------------------
+Python
+
+print("Put your age: ")
+
+age = input()
+age1 = int(age)
+
+if age1 <= 4:
+    print("You are a baby")
+elif age1 <= 12:
+    print("You are a child")
+elif age1 <= 18:
+    print("You are a young")
+elif age1 <= 59:
+    print("You are a adult")
+else:
+    print("You are old")
+    --------------------------
+Python simple
+
+age = int(input("Put your age: ")
+
+if age1 <= 4:
+    print("You are a baby")
+elif age1 <= 12:
+    print("You are a child")
+elif age1 <= 18:
+    print("You are a young")
+elif age1 <= 59:
+    print("You are a adult")
+else:
+    print("You are old")
+---------------------------
+Java
+
+import java.util.Scanner;
+
+class Age {
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in); 
+        int age;
+        
+        System.out.print("Put your actual age: ");
+        age = read.nextInt();
+        
+        if (age <= 4) {
+            System.out.println("You are a baby");
+        } else if (age <= 12) {
+            System.out.println("You are a child");
+        } else if (age <= 18) {
+            System.out.println("You are young");
+        } else if (age <= 59) {
+            System.out.println("You are adult");
+        } else {
+            System.out.println("You are old");
+        } 
+    }
+}
+--------------
+C# Language
+
+using System;
+
+public class Age
+{
+    public static void Main(string[] args)
+    {
+        int age;
+        
+        Console.WriteLine("Put your actual age: ");
+        age = int.Parse(Console.ReadLine());
+        
+        if (age <= 4)
+        {
+            Console.WriteLine("You are a baby");
+        }
+        else if (age <= 12)
+        {
+            Console.WriteLine("You are a child");
+        }
+         else if (age <= 18)
+        {
+            Console.WriteLine("You are young");
+        }
+         else if (age <= 59)
+        {
+            Console.WriteLine("You are adult");
+        }
+        else
+        {
+            Console.WriteLine("You are old");
+        }
+    }
+}
+--------------
+C Language
+
+#include <stdio.h>
+
+int main() {
+
+int age;
+
+printf("Put your actual age: ");
+scanf("%d", &age);
+
+if (age <= 4)
+ {
+     printf("You are a baby");
+ }
+else if (age <= 12)
+ {
+     printf("You are a child");
+ }
+else if (age <= 18)
+ {
+     printf("You are young");
+ }
+else if (age <= 59)
+ {
+     printf("You are adult");
+ }
+else
+ {
+     printf("You are old");
+ }
+return 0;
+}
+----------------------
+C++ Language
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+	
+	cout << "Put your actual age: ";
+    cin >> age;
+	
+	if (age<=4){
+        cout << "You are a baby" << endl;
+    }
+	else if (age<=12){
+        cout << "You are a child" << endl;
+    }
+	else if (age<=18){
+        cout << "You are young" << endl;
+    }
+	else if (age<=59){
+        cout << "You are adult" << endl;
+    }
+    else {
+        cout << "You are old" << endl;
+    }
+
+    return 0;
+}
+----------------------------
+Java Switch Case Calculator Double
+
+import java.util.Scanner;
+
+class Calculator {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in); 
+        Double sum1, sum2;
+	char mathematical;
+        
+        System.out.print("Please enter the first number to be calculated: ");
+        sum1 = input.nextDouble();
+
+	System.out.print("Now enter the second number to be calculated: ");
+        sum2 = input.nextDouble();
+
+	System.out.print("Now choose the math operation to be performed: +, -, *, or / ");
+	mathematical = input.next().charAt(0);
+		
+	switch (mathematical){
+		
+	case '+':
+       
+        System.out.println(sum1 + sum2);
+		
+	break;
+		
+	case '-':
+       
+        System.out.println(sum1 - sum2);
+		
+	break;
+		
+	case '*':
+       
+        System.out.println(sum1 * sum2);
+		
+	break;
+		
+	case '/':
+       
+        System.out.println(sum1 / sum2);
+		
+	break;
+	}
+	input.close();
+    }
+}
+-----------------------
+Java Switch Case Calculator Integer
+
+import java.util.Scanner;
+
+class Calculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); 
+        int sum1, sum2;
+	char mathematical;
+        
+        System.out.print("Please enter the first number to be calculated: ");
+        sum1 = input.nextInt();
+	System.out.print("Now enter the second number to be calculated: ");
+        sum2 = input.nextInt();
+
+	System.out.print("Now choose the math operation to be performed: +, -, *, or / ");
+	mathematical = input.next().charAt(0);
+		
+	switch (mathematical){
+		
+	case '+':
+       
+        System.out.println(sum1 + sum2);
+		
+	break;
+		
+	case '-':
+       
+        System.out.println(sum1 - sum2);
+		
+	break;
+		
+	case '*':
+       
+        System.out.println(sum1 * sum2);
+		
+	break;
+		
+	case '/':
+       
+        System.out.println(sum1 / sum2);
+		
+	break;
+	}
+	input.close();
+    }
+}
+---------------------------
+HTML
+
+<!DOCTYPE html>
+<!--sempre começa com HTML e o DOCTYPE deve ser declarado igual função main-->
+
+<html>
+<!--o head é a cabeça da página, title é o nome que aparece na aba-->
+<head>
+<title>Pagina Web</title>
+</head>
+
+<!--abaixo será toda a estrutura que aparece no navegador, equivalente ao } { do java-->
+
+<body>
+
+<!--de h1 a h6 são os titulos, diminuindo conforme aumenta o numero-->
+<h1>My First Heading</h1>
+
+<!--no p declaramos o paragrafo-->
+<p>My first paragraph.</p>
+
+<!--de h1 a h6 são os titulos, diminuindo conforme aumenta o numero-->
+<h2>Hello World!</h2>
+
+<!--dunção a href é para abrir um link-->
+<a href="https://www.w3schools.com">This is a link</a>
+
+<!--img src é onde está a imagem, alt é o texto alternativo caso não carregue, width é largura/horizontal e height é altura/vertical-->
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+<!--br é a quebra de linha-->
+<p>This is a <br> paragraph with a line break.</p>
+
+<!--The style attribute is used to add styles to an element, such as color, font, size, and more-->
+<p style="color:red;">This is a red paragraph.</p>
+
+</body>
+</html>
+---------------------------
+Java compare Strings
+
+import java.util.Scanner;
+
+public class Name {
+  public static void main(String[] args) {
+  
+  Scanner name = new Scanner(System.in);
+  System.out.println("Escreva um nome: ");
+  
+  String name1 = name.nextLine();
+  String name2 = "Luis";
+  String name3 = "Tania";
+  
+	if (name1.equals(name2)){
+	System.out.println("Esse eh daora!");
+	}
+	else if (name1.equals(name3)){
+	System.out.println("Essa eh firmeza");
+	}
+	else{
+	System.out.println("Sabe nada");
+	}
+  }
+}
+------------------------
+C++ String
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    string nome;
+    
+    cout << "Insira seu nome \n";
+    cin >> nome;
+
+    cout << "Seu nome é: " << nome << endl;
+    
+    return 0;
+}
+------------------------
+C++ Linha completa
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+
+string fullName;
+cout << "Type your full name: ";
+getline (cin, fullName);
+cout << "Your name is: " << fullName;
+    
+    return 0;
+}
+---------------------------
+Calculator in C:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    
+    int v1, v2, result, sel, resp;
+    
+    do
+    {
+    printf("Olá! Seja bem vindo ao software de calculadora! \n");
+    printf("Para começarmos, escolha um número inteiro que deseja calcular: ");
+    scanf("%d", &v1);
+    printf("Agora escreva o segundo número inteiro: ");
+    scanf("%d", &v2);
+    
+    printf("Agora selecione o cálculo a ser feito: \n");
+    printf("1 - Para adição: \n");
+    printf("2 - Para subtração: \n");
+    printf("3 - Para multiplicação: \n");
+    printf("4 - Para divisão: \n\n");
+    scanf("%d", &sel);
+    
+    switch(sel)
+    {
+    case 1:
+        result = sum(v1, v2);
+        printf("O resultado de %d + %d é %d\n", v1, v2, result);
+        break;
+    case 2:
+        result = less(v1, v2);
+        printf("O resultado de %d - %d é %d\n", v1, v2, result);
+        break;
+    case 3:
+        result = mult(v1, v2);
+        printf("O resultado de %d * %d é %d\n", v1, v2, result);
+        break;
+    case 4:
+        result = divs(v1, v2);
+        printf("O resultado de %d / %d é %d\n", v1, v2, result);
+        break;
+    }    
+        if (sel > 4){
+            printf("Opa! Identifiquei que você digitou um número inválido, vamos tentar novamente! Selecione as seguintes opções: \n");
+            printf("1 - Para adição: \n");
+            printf("2 - Para subtração: \n");
+            printf("3 - Para multiplicação: \n");
+            printf("4 - Para divisão: \n\n");
+            scanf("%d", &sel);
+        
+            switch(sel)
+            {
+                case 1:
+                result = sum(v1, v2);
+                printf("O resultado de %d + %d é %d\n", v1, v2, result);
+                break;
+                case 2:
+                result = less(v1, v2);
+                printf("O resultado de %d - %d é %d\n", v1, v2, result);
+                break;
+                case 3:
+                result = mult(v1, v2);
+                printf("O resultado de %d * %d é %d\n", v1, v2, result);
+                break;
+                case 4:
+                result = divs(v1, v2);
+                printf("O resultado de %d / %d é %d\n", v1, v2, result);
+                break;
+            }
+        }
+    printf("Fim do Programa! Digite 1 para fazer novo calculo ou 2 para sair\n");
+    scanf("%d", &resp);
+    } while (resp == 1);
+    
+    return 0;
+}
+
+int sum(int s1, int s2){
+    int resultado;
+    resultado = s1 + s2;
+    return(resultado);
+}
+
+int less(int l1, int l2){
+    int resultado;
+    resultado = l1 - l2;
+    return(resultado);
+}
+
+int mult(int m1, int m2){
+    int resultado;
+    resultado = m1 * m2;
+    return(resultado);
+}
+
+int divs(int d1, int d2){
+    int resultado;
+    resultado = d1 / d2;
+    return(resultado);
+}
+--------------------
